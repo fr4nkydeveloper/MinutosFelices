@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Startup Responsive Landing page Template for startup, web services, newsletter signup, lead generation etc..">
+<meta name="description" content="Bodas, esposos, felicitaciones">
 <title>Minutos Felices</title>
 
-<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet"> 
 <link href="css/animate.min.css" rel="stylesheet">
 <link href="css/alertify.min.css" rel="stylesheet">
 <link href="css/startup.css" rel="stylesheet">
+<link href="css/sweetalert.min.css" rel="stylesheet">
 
 <!--[if lt IE 9]>
   <script src="js/html5shiv.js"></script>
@@ -27,7 +28,6 @@
 
 <main id="top" class="masthead" role="main">
 <div class="container">
-
 <div class="logo"> <a href="index-v-signup.html#"><img src="images/logo.png" alt="startup-logo" width="223" height="99"></a> </div>
 
 <!--<h1>Agregale 30 minutos <span data-typer-targets="divertidos,modernos,emotivos">emotivos</span> <strong>a tu boda</strong> </h1>-->
@@ -268,36 +268,40 @@ and we love <strong>technology</strong></h1>
 <script src="js/typer.js"></script>
 <script src="js/alertify.min.js"></script>
 <script src="js/jquery.validate.js"></script>
+<script src="js/sweetalert.min.js"></script> 
+
 
 <script>
+
     $(function () {
       $('[data-typer-targets]').typer();
     });
 
     $(function() {
   $('#featuresProducto').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
-});
+		e.preventDefault();
+		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+	  });
+	});
 
     $(function() {
-  $('#footerBtn').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 700, 'linear');
-  });
-});
+	  $('#footerBtn').on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 700, 'linear');
+	  });
+	});
 
-
-
-  </script>
+</script>
 
 <script>
 
-$(document).ready(function(){ 
+$(document).ready(function(){
+	
+	if (<?php echo array_key_exists('MAILCHIMP_SIGNUP', $_POST) ? 'true': 'false' ?>) {
+		swal("Gracias por registrarte!", "Te hemos enviado un correo electrónico", "success");
+	}
 
   $('#registerForm').validate({
-
 
      rules: {
       NOMBRE: {
@@ -335,7 +339,7 @@ $(document).ready(function(){
 
   });
 
-  });
+});
 
 </script>
 
