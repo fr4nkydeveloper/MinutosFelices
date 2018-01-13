@@ -121,15 +121,15 @@ y fotos desde su smartphone utilizando minutos felices</p>
 <div class="flexApp">
 
 <div class="app">
-<img src="images/app.png" class="animated infinite bounce">  
+<img src="images/app1.jpg" class="animated infinite bounce">  
 </div>
 
 <div class="tv">  
-<img src="images/app.png" class="animated infinite pulse">  
+<img src="images/app2.jpg" class="animated infinite pulse">  
 </div>
 
 <div class="book">
-<img src="images/app.png" class="animated infinite swing">  
+<img src="images/app3.jpg" class="animated infinite swing">  
 </div>
 
 </div>
