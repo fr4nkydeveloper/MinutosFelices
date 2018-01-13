@@ -41,15 +41,13 @@
 
 <div class="row">
 <div class="col-md-4 col-sm-12 col-md-offset-4 signupContainer">
-<div class="signup-block"><form class="form" role="form" method="POST" action="index.html" name="registration" id="registerForm">
+<div class="signup-block"><form class="form" role="form" method="POST" name="registration" id="registerForm"
+	action="https://minutosfelices.us17.list-manage.com/subscribe/post?u=c32564ffba00eca03bc95243f&amp;id=4c2b23c5d0">
 <div class="form-group">
-<input class="form-control input-lg" name="nombre" type="text" placeholder="Nombre">
+<input class="form-control input-lg" name="NOMBRE" type="text" placeholder="Nombre">
 </div>
 <div class="form-group">
-<input class="form-control input-lg" name="email" type="email" placeholder="Email" >
-</div>
-<div class="form-group">
-<input class="form-control input-lg" name="telefono" type="tel" placeholder="Teléfono" >
+<input class="form-control input-lg" name="EMAIL" type="email" placeholder="Email" >
 </div>
 <div class="form-group last">
  <button type="submit" class="btn btn-success btn-block btn-lg">PRUEBALO GRATIS</button>
@@ -307,10 +305,10 @@ $(document).ready(function(){
 
 
      rules: {
-      nombre:{
+      NOMBRE:{
         required: true
       },
-      email:{
+      EMAIL:{
         required: true,
         email: true
       }
@@ -321,7 +319,7 @@ $(document).ready(function(){
         required: "Ingresa tu nombre"
       },
       email: {
-        required: "Favor de ingresa un mail valido"
+        required: "Ingresa un email válido"
       }
     },
 
@@ -332,7 +330,7 @@ $(document).ready(function(){
 
       var errors = validator.numberOfInvalids();
       if (errors) {
-        alertify.error('Favor de revisar tus datos');
+        alertify.error('Por favor revisa tus datos');
       } 
     },
 
@@ -343,10 +341,6 @@ $(document).ready(function(){
   });
 
   });
-
-
-
-        
 
 </script>
 
